@@ -1,15 +1,29 @@
 # ai-code-analyzer
-A simple practice run to see how chatgpt (AI) sued old array assignemtment and make them more efficient  
 
+This is a simple practice run to see how ChatGPT (AI) can take an old array-based C++ assignment and make it more efficient, readable, and aligned with modern best practices.
 
-## How It Worked
-- A sample C++ file is provided (AI_codee.cpp)
-- Promted chatGPT " Can you analyze this C++ code and suggest improvements for readability, performance, and best practices?”
-- Gave me multiple options that looked through to see which one worked with my C++ version and had the best readabilty 
-- chatGPT said it was better because:
-    1. Uses standard containers (std::array) – safer than raw arrays, automatically knows its size.
-    2. Uses std::sort – faster (O(n log n)) and less error-prone than manual bubble sort.
-    3. Avoids using namespace std; – prevents name conflicts and keeps code clear.
-    4. Clean, short, and reusable – easy to read, works for any type, and simple to modify.
-       
-- Suggestions are saved in `analysis_report.md`
+## Overview
+The project started with a basic C++ program using a raw array and manual bubble sort. The goal was to have ChatGPT analyze the code and suggest improvements for:
+
+- **Readability**  
+- **Performance**  
+- **Best Practices**  
+
+## Process
+1. Provided a sample C++ file: `AI_code.cpp`  
+2. Prompted ChatGPT:  
+   > *"Can you analyze this C++ code and suggest improvements for readability, performance, and best practices?”*  
+3. Received multiple improved versions of the code.  
+4. Tested each version to ensure compatibility with my C++ setup and compared readability.  
+5. Selected the final version based on clarity, maintainability, and modern C++ conventions.
+
+## Why the Final Version is Better
+1. <u>**Uses standard containers (`std::array`)**</u> – safer than raw arrays and automatically knows its size.  
+2. <u>**Uses `std::sort`**</u> – faster (*O(n log n)*) and less error-prone than manual bubble sort.  
+3. <u>**Avoids `using namespace std;`**</u> – prevents name conflicts and keeps code clear.  
+4. <u>**Clean, short, and reusable**</u> – easy to read, works for any type, and simple to modify.  
+
+## Files
+- **`AI_code.cpp`** – Original C++ code provided for analysis.  
+- **`analysis_report.md`** – Contains ChatGPT’s suggestions and reasoning for the improvements.  
+
